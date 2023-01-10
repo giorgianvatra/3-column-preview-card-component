@@ -1,0 +1,150 @@
+/*Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{ 
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+}
+
+body{          
+               display: flex;
+               justify-content: center; 
+               align-items: center;
+               flex-direction: column;
+               flex-wrap: wrap;
+               font-family: 'Big Shoulders Display', cursive;
+               font-family: 'Lexend Deca', sans-serif;   
+               min-height: 100vh;
+               font-size: 15px;    
+}
+
+
+@media (min-width: 450px){ 
+               .container { 
+                              display: grid;
+                              
+                              grid-template-columns: 1fr 1fr 1fr;
+                              max-width: 750px;
+                 }
+                 .orange-container{ 
+                              padding: 3rem;
+                              background-color: hsl(31, 77%, 52%);
+                              border-top-left-radius: 0.5rem;
+                              border-bottom-left-radius: 0.5rem;
+                              }
+               
+                              .blue-container{ 
+                              padding: 3rem;
+                              background-color: hsl(184, 100%, 22%);  
+                              }
+               
+                              .dark-blue-container{ 
+                              padding: 3rem;
+                              background-color: hsl(179, 100%, 13%);
+                              border-bottom-right-radius: 0.5rem;
+                              border-top-right-radius: 0.5rem;
+                              }  
+}
+
+  @media (max-width: 450px){ 
+               .container{ 
+                              display: grid;
+                              grid-template-columns: 1fr;
+                              max-width: 300px;
+               }
+
+               .orange-container{ 
+                              padding: 3rem;
+                              background-color: hsl(31, 77%, 52%);
+                              border-top-left-radius: 0.5rem;
+                              border-top-right-radius: 0.5rem;
+               }
+               
+               .blue-container{ 
+                              padding: 3rem;
+                              background-color: hsl(184, 100%, 22%);  
+               }
+               
+               .dark-blue-container{ 
+                              padding: 3rem;
+                              background-color: hsl(179, 100%, 13%);
+                              border-bottom-left-radius: 0.5rem;
+                              border-bottom-right-radius: 0.5rem;
+               }  
+               
+  }
+
+
+
+
+
+
+
+
+
+
+.orange-container img, .blue-container img, .dark-blue-container img{ 
+               width: 3.5rem;
+               padding-bottom: 1rem;
+}
+.orange-container h1, .blue-container h1, .dark-blue-container h1{ 
+               font-family: 'Big Shoulders Display', cursive;
+               color: white;
+               font-variant-caps: all-petite-caps;
+               font-stretch:wider; 
+               height:fit-content;
+               font-size: 3rem;
+               padding-bottom: 2rem;
+}
+
+
+.orange-container p, .blue-container p, .dark-blue-container p{
+               color: white;
+               font-size: .9rem;
+               font-weight: 500;
+               line-height: 1.2rem;
+               padding-bottom: 1.7rem;
+
+}
+
+.orange-container button{ 
+               color: hsl(31, 77%, 52%);
+               background-color: white;
+               border: none;
+               padding: 1rem 2.5rem;
+               border-radius: 2rem;
+               font-weight: 500;
+               font-family: 'Lexend Deca', sans-serif;   
+}
+
+.blue-container button{ 
+               color: hsl(184, 100%, 22%);
+               background-color: white;
+               border: none;
+               padding: 1rem 2.5rem;
+               margin-top: 1.2rem;
+               border-radius: 2rem;
+               font-weight: 500;
+               font-family: 'Lexend Deca', sans-serif;   
+}
+
+.dark-blue-container button{ 
+               color: hsl(179, 100%, 13%);
+               background-color: white;
+               border: none;
+               padding: 1rem 2.5rem;
+               border-radius: 2rem;
+               font-weight: 500;
+               font-family: 'Lexend Deca', sans-serif;   
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
